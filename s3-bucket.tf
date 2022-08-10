@@ -9,3 +9,9 @@ module "s3_bucket" {
   }
 
 }
+
+terraform {
+  required_providers {
+    aws = "~> 3.42.0" # or anything lower than 3.75.0
+  }
+}
