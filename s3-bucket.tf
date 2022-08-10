@@ -1,7 +1,7 @@
 module "s3_bucket" {
-  source = "https://github.com/terraform-aws-modules/terraform-aws-s3-bucket"
+  source = "terraform-aws-modules/s3-bucket/aws"
 
-  bucket = "testetetetmy-s3-bucket"
+  bucket = "my-s3-bucket"
   acl    = "private"
 
   versioning = {
